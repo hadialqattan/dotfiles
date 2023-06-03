@@ -1,0 +1,14 @@
+[user]
+	name = Hadi Alqattan
+	email = alqattanhadizaki@gmail.com
+[core]
+	excludesFile = ~/.gitignore
+	editor = vim
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[init]
+	defaultBranch = main
+[color]
+	ui = true
+[pull]
+	rebase = true
