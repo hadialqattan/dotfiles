@@ -15,4 +15,4 @@ alias sync-all="sync-beta && sync-stable"
 
 # chezmoi ~> df (dotfiles)
 alias df="chezmoi"
-
+alias dfsync='f(){ df re-add && df git add . && df git commit -- -m "$1" && df git push;  unset -f f; }; f'
