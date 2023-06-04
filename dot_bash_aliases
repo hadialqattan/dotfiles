@@ -15,4 +15,5 @@ alias sync-all="sync-beta && sync-stable"
 
 # chezmoi ~> dfs (dotfiles)
 alias dfs="chezmoi"
+alias dfspull="dfs update"
 alias dfspush='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && dfs git push;  unset -f f; }; f'
