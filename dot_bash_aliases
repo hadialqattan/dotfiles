@@ -13,6 +13,6 @@ alias sync-beta="git checkout beta && git reset --hard main && git push && git c
 alias sync-stable="git checkout stable && git reset --hard main && git push && git checkout main"
 alias sync-all="sync-beta && sync-stable"
 
-# chezmoi ~> df (dotfiles)
-alias df="chezmoi"
-alias dfsync='f(){ df re-add && df git add . && df git commit -- -m "$1" && df git push;  unset -f f; }; f'
+# chezmoi ~> dfs (dotfiles)
+alias dfs="chezmoi"
+alias dfsync='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && dfs git push;  unset -f f; }; f'
