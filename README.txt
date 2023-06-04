@@ -1,4 +1,4 @@
 To install:
 ```
-$ sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/local/bin init --apply hadialqattan
+$ sh -c "$(curl -fsLS get.chezmoi.io)" -- -b $HOME/.local/bin init --apply hadialqattan
 ```
