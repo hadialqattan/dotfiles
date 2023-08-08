@@ -20,6 +20,6 @@ alias dfspush='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && 
 
 # projects/course-offering/banner9-syncing-system/scripts/*
 alias sync-ssh="$HOME/projects/course-offering/banner9-syncing-system/scripts/ssh.sh"
-alias sync-init="$HOME/projects/course-offering/banner9-syncing-system/scripts/init-vm.sh"
-alias sync-delete="$HOME/projects/course-offering/banner9-syncing-system/scripts/terminate.sh"
+alias sync-vm-init="$HOME/projects/course-offering/banner9-syncing-system/scripts/init-vm.sh"
+alias sync-vm-delete="$HOME/projects/course-offering/banner9-syncing-system/scripts/terminate.sh"
 
