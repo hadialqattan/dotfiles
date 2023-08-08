@@ -18,5 +18,8 @@ alias dfs="chezmoi"
 alias dfspull="dfs update"
 alias dfspush='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && dfs git push;  unset -f f; }; f'
 
-# course-offering.com SSH
-alias sync-ssh='gcloud compute ssh --zone "us-east1-b" "banner9-syncing-system" --project "course-offering-us-east1"'
+# projects/course-offering/banner9-syncing-system/scripts/*
+alias sync-ssh="$HOME/projects/course-offering/banner9-syncing-system/scripts/ssh.sh"
+alias sync-init="$HOME/projects/course-offering/banner9-syncing-system/scripts/init-vm.sh"
+alias sync-delete="$HOME/projects/course-offering/banner9-syncing-system/scripts/terminate.sh"
+
