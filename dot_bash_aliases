@@ -8,18 +8,8 @@ alias dc="conda deactivate"
 # auto-start jupyter
 alias pynote="ac && jupyter notebook"
 
-# sync git beta and stable with main
-alias sync-beta="git checkout beta && git reset --hard main && git push && git checkout main"
-alias sync-stable="git checkout stable && git reset --hard main && git push && git checkout main"
-alias sync-all="sync-beta && sync-stable"
-
 # chezmoi ~> dfs (dotfiles)
 alias dfs="chezmoi"
-alias dfspull="dfs update"
-alias dfspush='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && dfs git push;  unset -f f; }; f'
-
-# projects/course-offering/banner9-syncing-system/scripts/*
-alias sync-ssh="$HOME/projects/course-offering/banner9-syncing-system/scripts/vm_ssh.sh"
-alias sync-init="$HOME/projects/course-offering/banner9-syncing-system/scripts/vm_init.sh"
-alias sync-delete="$HOME/projects/course-offering/banner9-syncing-system/scripts/vm_delete.sh"
+alias dotfiles_pull="dfs update"
+alias dotfiles_push='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && dfs git push;  unset -f f; }; f'
 
