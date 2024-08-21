@@ -2,3 +2,6 @@
 alias dfs="chezmoi"
 alias dotfiles_pull="dfs update"
 alias dotfiles_push='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$1" && dfs git push;  unset -f f; }; f'
+
+# projects dir
+alias p="cd ~/projects"
