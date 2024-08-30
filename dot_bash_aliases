@@ -6,3 +6,5 @@ alias dotfiles_push='f(){ dfs re-add && dfs git add . && dfs git commit -- -m "$
 # some useful cd *
 alias p="cd ~/projects"
 alias co="cd ~/projects/course-offering"
+alias cow="cd ~/projects/course-offering/WIP"
+
