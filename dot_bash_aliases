@@ -11,5 +11,29 @@ alias cow="cd ~/projects/course-offering/WIP"
 # ls aliases
 alias la="ls -la"
 
-# xclip copy file content to clipboard
-alias ccp="xclip -selection clipboard <" # filename goes after
+# xclip: copy to and paste from the clipboard
+cb() {
+	case "$1" in
+		"cp")
+			if [ -z "$2" ]; then
+				echo "Usage: cb cp filename"
+				return 1
+			fi
+			xclip -selection clipboard < "$2"
+			echo "Content of '$2' copied to clipboard."
+			;;
+		"ps")
+			if [ -z "$2" ]; then
+				echo "Usage: cb ps filename"
+				return 1
+			fi
+			xclip -out -selection clipboard > "$2"
+			echo "Clipboard content pasted to '$2'."
+			;;
+		*)
+			echo "Usage:"
+			echo "  cb cp filename	# Copy file content to clipboard"
+			echo "  cb ps filename	# Paste clipboard content to file (overwrite)"
+			;;
+	esac
+}
