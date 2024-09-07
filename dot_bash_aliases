@@ -10,3 +10,6 @@ alias cow="cd ~/projects/course-offering/WIP"
 
 # ls aliases
 alias la="ls -la"
+
+# xclip copy file content to clipboard
+alias ccp="xclip -selection clipboard <" # filename goes after
