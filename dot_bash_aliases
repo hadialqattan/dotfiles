@@ -8,3 +8,5 @@ alias p="cd ~/projects"
 alias co="cd ~/projects/course-offering"
 alias cow="cd ~/projects/course-offering/WIP"
 
+# ls aliases
+alias la="ls -la"
