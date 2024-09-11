@@ -1,6 +1,31 @@
+" globals
+set expandtab
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
+
 set smartindent
 set autoindent
+
 set rnu
-set clipboard=unnamedplus
+set clipboard=unnamedplus	" vim-gtk3
+
+
+" locals
+augroup makefile
+	autocmd!
+	autocmd FileType make setlocal noexpandtab
+augroup END
+
+
+" plugins
+" managed by: curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" :PlugInstall
+call plug#begin('~/.vim/plugged')
+Plug 'ciaranm/detectindent'
+call plug#end()
+let g:detectindent_preferred_expandtab=1
+let g:detectindent_preferred_indent=4
+let g:detectindent_max_indent_level=8
+autocmd BufReadPost * DetectIndent
+
