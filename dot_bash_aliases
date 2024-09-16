@@ -12,7 +12,7 @@ alias cow="cd ~/projects/course-offering/WIP"
 alias la="ls -la"
 
 # shorten PS1
-alias clean="PS1='\W> '"
+alias clean="PS1='\W> '; clear"
 
 # activate .venv environment
 alias venv="source .venv/bin/activate"
