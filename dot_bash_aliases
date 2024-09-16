@@ -11,6 +11,12 @@ alias cow="cd ~/projects/course-offering/WIP"
 # ls aliases
 alias la="ls -la"
 
+# shorten PS1
+alias clean="PS1='\W> '"
+
+# activate .venv environment
+alias venv="source .venv/bin/activate"
+
 # xclip: copy to and paste from the clipboard
 cb() {
 	case "$1" in
