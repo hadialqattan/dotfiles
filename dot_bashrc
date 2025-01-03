@@ -118,3 +118,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 
 [ -f "/home/hadi/.ghcup/env" ] && . "/home/hadi/.ghcup/env" # ghcup-env
+
+# flutter
+export PATH="$PATH:/home/hadi/development/flutter/bin"
