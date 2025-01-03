@@ -121,3 +121,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 
 # flutter
 export PATH="$PATH:/home/hadi/development/flutter/bin"
+export ANDROID_HOME=/home/hadi/Android/Sdk
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/bin:$ANDROID_HOME/platform-tools"
+
